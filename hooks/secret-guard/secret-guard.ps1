@@ -254,7 +254,7 @@ try {
     if ($kinds.Count -gt 0) {
       $what = ($kinds -join ' and ')
       $tool = [string]$j.tool_name
-      $msg = "secret-guard: WARNING. The output of $tool contained a $what. Claude has already seen it. Treat it as exposed and rotate it (see the rotation checklist in secret-guard.md)."
+      $msg = "secret-guard: WARNING. The output of $tool contained a $what. Claude has already seen it. Treat it as exposed and rotate it (see the rotation checklist in the secret-guard README)."
       $out = @{
         systemMessage      = $msg
         hookSpecificOutput = @{

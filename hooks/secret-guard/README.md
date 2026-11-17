@@ -137,7 +137,7 @@ The error text tells you which: "denied" / "permission" = 1-3, "Authentication f
 - **It fails open.** If the script crashes (PowerShell missing, bad JSON, a bug), the check is skipped and you see `secret-guard: internal error`. Nothing is blocked.
 - **Placeholders and the allow list:** values like `changeme`, `***`, `<your-key>`, `${VAR}`, numbers and `true/false` are ignored on purpose, and so is anything in `.claude/secret-guard.allow`. A real secret that looks like a placeholder, or a value you allowed and later reused for real, passes.
 - **Speed:** PowerShell starts on every covered tool call, before and (for the output check) after, which adds a short delay (often a few hundred ms) each time.
-- **Windows only**, and not yet tested in a live session (see "Test it" above).
+- **Windows only.** See "Test it" above for what has been verified in a live session.
 
 ### What actually protects you
 1. `settings.json` deny rules (user level above, plus `/setup-context` per project): the real wall. Claude Code enforces them itself.

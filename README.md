@@ -86,7 +86,7 @@ None of them commit, push, or copy secrets into files.
 ## Quick start
 
 ```bash
-git clone https://github.com/Ok4jjj/claude-system-context.git
+git clone https://github.com/ktpsnrph/claude-system-context.git
 cd claude-system-context
 ```
 
